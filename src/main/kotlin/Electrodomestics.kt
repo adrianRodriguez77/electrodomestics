@@ -3,10 +3,10 @@ package org.example
 import com.sun.prism.paint.Color
 
 open class Electrodomestics {
-    protected var preuBase = 0.0
-    protected var color = ""
-    protected var consum = ""
-    protected var pes = 0.0
+    var preuBase = 0.0
+    var color = ""
+    var consum = ""
+    var pes = 0.0
 
     constructor(preuBase: Double){
         this.preuBase = preuBase
@@ -38,14 +38,14 @@ open class Electrodomestics {
         return preuFinal
     }
     override fun toString(): String {
-        return "Preu Base: $preuBase€ \nColor: $color \nConsumo: $consum \nPeso: $pes kg \nPreu final: ${preuFinal()}€"
+        return "Preu Base: $preuBase€ \nColor: $color \nConsum: $consum \nPes: $pes kg \nPreu final: ${preuFinal()}€"
     }
 }
 
 class Rentadora: Electrodomestics{
     protected var carrega = 0
 
-    constructor(preuBase: Double): super(preuBase){}
+    constructor(preuBase: Double, color: String, consum: String, pes: Double, carrega: Int): super(preuBase, color, consum, pes){}
 
     override fun preuFinal(): Double {
         var preuFinal = super.preuFinal()
