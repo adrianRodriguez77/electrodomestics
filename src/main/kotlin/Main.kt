@@ -17,7 +17,7 @@ fun main() {
     val t1 = Televisio(200.0, "platejat", "E", 10.0, 52)
     val t2 = Televisio(315.0, "blanc", "F", 15.0, 28)
 
-    println("E1:\n$e1 \nE2:\n$e2 \nE3:\n$r1 \nE4:\n$r2 \nE5:\n$t1 \nE6:\n$t2")
+    println("E1:\n$e1 \nE2:\n$e2 \nR1:\n$r1 \nR2:\n$r2 \nT1:\n$t1 \nT2:\n$t2")
 
     preuBaseTotal += e1.preuBase + e2.preuBase
     preuFinalTotal += e1.preuFinal() + e2.preuFinal()
