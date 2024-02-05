@@ -1,7 +1,5 @@
 package org.example
 
-import com.sun.prism.paint.Color
-
 open class Electrodomestics {
     var preuBase = 0.0
     var color = ""
@@ -45,7 +43,7 @@ open class Electrodomestics {
 class Rentadora: Electrodomestics{
     protected var carrega = 0
 
-    constructor(preuBase: Double, color: String, consum: String, pes: Double, carrega: Int): super(preuBase, color, consum, pes){}
+    constructor(preuBase: Double, color: String, consum: String, pes: Double): super(preuBase, color, consum, pes){}
 
     override fun preuFinal(): Double {
         var preuFinal = super.preuFinal()
